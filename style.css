@@ -1,0 +1,55 @@
+.telaInicial{
+    background-image: url(./img/background.png);
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+}
+
+.logoTelaInicial{
+    width: 159px;
+    height: 146px;
+    flex-shrink: 0;
+}
+
+.botaoSobre {
+    width: 242px;
+    height: 52px;
+    color: aliceblue;
+    border-radius: 100px;
+    border: 1px solid ;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    font-size: 21px;
+    background-color: transparent;
+    transition:  bac;
+}
+
+.botoes{
+    list-style: none; /* Remove os marcadores da lista */
+    padding: 0;
+    display: flex; /* Torna a lista um contêiner flexível */
+    justify-content: center; /* Centraliza os itens da lista */
+    margin: 0 10px;
+}button:hover {
+    color: black;
+    background-color: #6bc6dc; /* Cor de fundo ao passar o mouse */
+    transform: scale(1.1);
+}
+
+.BotoesSelecionados{
+    margin: 25px;
+    margin-top: -100px;
+}
+
+.FotoDePerfil{
+    display: flex;
+    width: 300px;
+    padding-top: 50px;
+    display: block; /* Remove espaços em branco abaixo da imagem quando exibida como elemento inline */
+    margin: 0 auto;
+}
+
+.Texto{
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    text-align: center;
+}
