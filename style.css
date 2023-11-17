@@ -6,6 +6,7 @@
 }
 
 .logoTelaInicial{
+    padding-left: 50px;
     width: 159px;
     height: 146px;
     flex-shrink: 0;
@@ -20,7 +21,6 @@
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     font-size: 21px;
     background-color: transparent;
-    transition:  bac;
 }
 
 .botoes{
@@ -29,8 +29,8 @@
     display: flex; /* Torna a lista um contêiner flexível */
     justify-content: center; /* Centraliza os itens da lista */
     margin: 0 10px;
-}button:hover {
-    color: black;
+}.botaoSobre:hover {
+    color: white;
     background-color: #6bc6dc; /* Cor de fundo ao passar o mouse */
     transform: scale(1.1);
 }
@@ -52,4 +52,34 @@
     font-family: 'Roboto', sans-serif;
     color: white;
     text-align: center;
+}
+
+.caixaPrincipal{
+    background-color: #021524;
+    justify-content: center;
+    width: 500px;
+    height: 700px;
+    border: 1px solid white;
+    margin: auto;
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.BotaoSobreMim1{
+    padding-top: 15px;
+}
+.BotaoSobreMim{
+    width: 242px;
+    height: 52px;
+    color: aliceblue;
+    border-radius: 100px;
+    border: 1px solid ;
+    font-size: 21px;
+    background-color: transparent;
+    padding-top: px;
+}.BotaoSobreMim:hover{
+    color: white;
+    background-color: #6bc6dc; /* Cor de fundo ao passar o mouse */
+    transform: scale(1.1);
 }
