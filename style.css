@@ -1,13 +1,10 @@
+ 
+
 body{
     background-image: url(./img/background.png);
     margin: 0;
     padding: 0;
     background-size: cover;
-
-    transition: background-image 0.2 linear;
-}
-body.dark{
-    background-image: url(./img/background-dark.png);
 }
 
 .logoTelaInicial{
@@ -89,66 +86,35 @@ body.dark{
     transform: scale(1.1);
 }
 
-.moonSun{
-    position: absolute;
-    top: 10px;
-    right: 100px;
-    width: 50px;
-}
-.checkbox{
-    opacity: 0;
-    position: absolute;
-    top: 8px;
-    width: 15px;
-    height: 15px;
-}
-
-.label{
-    background-color: black;
-    border-radius: 50px;
-    cursor: pointer;
-
+.container{
     display: flex;
+    justify-content: center;
     align-items: center;
-    justify-content: space-between;
-
-    padding: 10px;
-    padding-left: 20px;
-    position: relative;
-    height: 26px;
-    width: 50px;
-    transform: scale(1);
+    width: 100%;
+}
+.container.active{
+    background: #123;
 }
 
-.label .ball{
-    background-color: white;
-    border-radius: 50%;
+.buttonDark{
+    display: flex;
     position: absolute;
-    top: 5px;
-    left: 4px;
-    z-index: 1;
-
-    height: 35px;
-    width: 35px;
-
-    transform: translateX(0px);
-    transition: transform 0.2 linear;
+    width: 120px;
+    height: 50px;
+    left: 1680px;
+    top: 40px;
+    border: 2px solid #fff;
+    border-radius: 60px;
+    cursor: pointer;
 }
-
-.checkbox:checked + .label .ball{
-    transform: translateX(37px);
-}
-
-.fa-moon{
-    position: relative;
-    right: 7px;
-    z-index: 2;
-    color: #f1c40f;
-}
-
-.fa-sun{
-    position: relative;
-    right: 3px;
-    z-index: 2;
-    color: #f39c12;
+.buttonDark:before{
+    content: '';
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    background: #fff;
+    border-radius: 50%;
+    top: 2px;
+    left: 3px;
+    transform: translateX(150%);
 }

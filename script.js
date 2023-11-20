@@ -1,3 +1,7 @@
-const checkbox = document.getElementById('checkbox');
+const button = document.querySelector('.buttonDark');
+const container = document.querySelector('.container');
 
-checkbox.addEventListener('change' )
+button.onclick = function(){
+    this.classList.toggle('active');
+    container.classList.toggle('active');
+}
