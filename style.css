@@ -1,8 +1,13 @@
-.telaInicial{
+body{
     background-image: url(./img/background.png);
     margin: 0;
     padding: 0;
     background-size: cover;
+
+    transition: background-image 0.2 linear;
+}
+body.dark{
+    background-image: url(./img/background-dark.png);
 }
 
 .logoTelaInicial{
@@ -82,4 +87,68 @@
     color: white;
     background-color: #6bc6dc; /* Cor de fundo ao passar o mouse */
     transform: scale(1.1);
+}
+
+.moonSun{
+    position: absolute;
+    top: 10px;
+    right: 100px;
+    width: 50px;
+}
+.checkbox{
+    opacity: 0;
+    position: absolute;
+    top: 8px;
+    width: 15px;
+    height: 15px;
+}
+
+.label{
+    background-color: black;
+    border-radius: 50px;
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 10px;
+    padding-left: 20px;
+    position: relative;
+    height: 26px;
+    width: 50px;
+    transform: scale(1);
+}
+
+.label .ball{
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 5px;
+    left: 4px;
+    z-index: 1;
+
+    height: 35px;
+    width: 35px;
+
+    transform: translateX(0px);
+    transition: transform 0.2 linear;
+}
+
+.checkbox:checked + .label .ball{
+    transform: translateX(37px);
+}
+
+.fa-moon{
+    position: relative;
+    right: 7px;
+    z-index: 2;
+    color: #f1c40f;
+}
+
+.fa-sun{
+    position: relative;
+    right: 3px;
+    z-index: 2;
+    color: #f39c12;
 }
